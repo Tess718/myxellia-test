@@ -143,7 +143,7 @@ const Page = () => {
 
       <RowOfCarousels/>
       
-      <img src="/footer.png" className='fixed z-10 lg:bottom-25 lg:right-20 right-5 bottom-20 md:bottom-150 md:right-3' alt="" />
+      <img src="/footer.png" className='fixed z-10 lg:bottom-25 lg:right-20 right-5 bottom-20 md:bottom-150 md:right-3 cursor-pointer' alt="" />
 
       
     </div>
