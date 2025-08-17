@@ -45,21 +45,21 @@ const [isBudgetOpen, setIsBudgetOpen] = useState(false);
 
   return (
     <div className='bg-white'>
-        <div className='bg-[#191919] py-6 px-20 flex justify-between items-center max-sm:flex-col'>
-            <img src="/Myxellia logo.png" alt="logo" className='' />
+        <div className='bg-[#191919] py-6 md:px-20 px-4 flex justify-between md:items-center items-end'>
+            <img src="/Myxellia logo.png" alt="logo" className='max-sm:w-26' />
 
-            <div className='flex items-center gap-6 max-sm:justify-center max-sm:pt-3'>
-                <img src="/Notification 1.png" alt="Notifications" className='opacity-50' />
+            <div className='flex items-center md:gap-6 gap-3 max-sm:justify-center max-sm:pt-3'>
+                <img src="/Notification 1.png" alt="Notifications" className='opacity-50 max-sm:w-5' />
 
-                <img src="/calculator.png" alt="Calculator" onClick={openBudget} className='cursor-pointer' />
+                <img src="/calculator.png" alt="Calculator" onClick={openBudget} className='cursor-pointer max-sm:w-5' />
 
-                <img src="/calendar.png" alt="Calendar icon" className='cursor-pointer' onClick={toggleCalendar} ref={calendarToggleRef} />
+                <img src="/calendar.png" alt="Calendar icon" className='cursor-pointer max-sm:w-5' onClick={toggleCalendar} ref={calendarToggleRef} />
 
-                <img src="/message-notif.png" alt="Messages" className='opacity-50' />
+                <img src="/message-notif.png" alt="Messages" className='opacity-50 max-sm:w-5' />
 
-                <img src="/Profile.png" alt="User profile" />
+                <img src="/Profile.png" alt="User profile" className='max-sm:w-5' />
 
-                <img src="/menu.png" alt="" className='w-10 md:hidden cursor-pointer' onClick={() => setOpen(!open)} />
+                <img src="/menu.png" alt="" className='w-10 md:hidden cursor-pointer max-sm:w-5' onClick={() => setOpen(!open)} />
             </div>
         </div>
 
