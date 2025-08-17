@@ -141,9 +141,11 @@ const Page = () => {
 
       </div>
 
-      <RowOfCarousels/>
+      <div className='relative'>
+        <RowOfCarousels/>
+      <img src="/Footer.png" className='absolute z-10 top-15 right-0 cursor-pointer' alt="" />
+      </div>
       
-      <img src="/Footer.png" className='fixed z-10 lg:bottom-25 lg:right-20 right-5 bottom-20 md:bottom-150 md:right-3 cursor-pointer' alt="" />
 
       
     </div>
