@@ -7,7 +7,7 @@ import Budget from './Budget';
 const Navbar = () => {
   const [isCalendarOpen, setIsCalendarOpen] = useState(false);
   const calendarRef = useRef<HTMLDivElement>(null);
-  const calendarToggleRef = useRef<HTMLButtonElement>(null);
+  const calendarToggleRef = useRef<HTMLImageElement>(null);
 
   const [open, setOpen] = useState(false);
 
@@ -53,7 +53,7 @@ const [isBudgetOpen, setIsBudgetOpen] = useState(false);
 
                 <img src="/calculator.png" alt="Calculator" onClick={openBudget} className='cursor-pointer' />
 
-                  <img src="/calendar.png" alt="Calendar icon" className='cursor-pointer' onClick={toggleCalendar} ref={calendarToggleRef} />
+                <img src="/calendar.png" alt="Calendar icon" className='cursor-pointer' onClick={toggleCalendar} ref={calendarToggleRef} />
 
                 <img src="/message-notif.png" alt="Messages" className='opacity-50' />
 
