@@ -66,19 +66,19 @@ const [isBudgetOpen, setIsBudgetOpen] = useState(false);
         <div className={`${open ? "block" : "hidden"} md:block w-full`}>
           <div className="flex px-20 border-b border-gray-300 py-4 justify-between items-center flex-col md:flex-row">
               <div className='flex gap-2 px-8 py-2 cursor-pointer active'>
-                  <img src="/Vector.png" alt=""/><p className='text-[14px] font-semibold text-main-black md:hidden lg:block'>Dashboard</p>
+                  <img src="/Vector.png" alt="" title='Dashboard' /><p className='text-[14px] font-semibold text-main-black md:hidden lg:block'>Dashboard</p>
               </div>
               <div className='flex gap-2 px-8 py-2 cursor-pointer'>
-                  <img src="/Vector (1).png" alt=""/><p className='text-[14px] font-regular text-deep-gray md:hidden lg:block'>Listings</p>
+                  <img src="/Vector (1).png" alt="" title='Listings'/><p className='text-[14px] font-regular text-deep-gray md:hidden lg:block'>Listings</p>
               </div>
               <div className='flex gap-2 px-8 py-2 cursor-pointer'>
-                  <img src="/Profile 1.png" alt=""/><p className='text-[14px] font-regular text-deep-gray md:hidden lg:block'>Users</p>
+                  <img src="/Profile 1.png" alt="" title='Users'/><p className='text-[14px] font-regular text-deep-gray md:hidden lg:block'>Users</p>
               </div>
               <div className='flex gap-2 px-8 py-2 cursor-pointer'>
-                  <img src="/Article.png" alt=""/><p className='text-[14px] font-regular text-deep-gray md:hidden lg:block'>Request</p>
+                  <img src="/Article.png" alt="" title='Request'/><p className='text-[14px] font-regular text-deep-gray md:hidden lg:block'>Request</p>
               </div>
               <div className='flex gap-2 px-8 py-2 cursor-pointer'>
-                  <img src="/Scroll.png" alt=""/><p className='text-[14px] font-regular text-deep-gray md:hidden lg:block'>Applications</p>
+                  <img src="/Scroll.png" alt="" title='Applications'/><p className='text-[14px] font-regular text-deep-gray md:hidden lg:block'>Applications</p>
               </div>
 
               <div className='search'>

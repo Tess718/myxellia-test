@@ -12,7 +12,7 @@ body{
 }
 
 .search {
-  @apply bg-gray-100 rounded-[8px] px-4 py-2 border border-[#E4E4E4] flex items-center gap-2 lg:w-[319px] md:w-fit;
+  @apply bg-gray-100 rounded-[8px] px-4 py-2 border border-[#E4E4E4] flex items-center gap-2 lg:w-[319px];
 }
 
 .text-mid-gray {
