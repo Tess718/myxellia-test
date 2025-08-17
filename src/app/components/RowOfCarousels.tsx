@@ -29,7 +29,7 @@ function CardCarousel({ slides }: { slides: Slide[] }) {
   const timeoutRef = useRef<NodeJS.Timeout | null>(null);
   const touchStartX = useRef<number | null>(null);
 
-  // Autoplay
+
   useEffect(() => {
     if (timeoutRef.current) clearTimeout(timeoutRef.current);
     timeoutRef.current = setTimeout(() => {
@@ -40,7 +40,7 @@ function CardCarousel({ slides }: { slides: Slide[] }) {
     };
   }, [current, slides.length]);
 
-  // Swipe handling
+ 
   const handleTouchStart = (e: React.TouchEvent) => {
     touchStartX.current = e.touches[0].clientX;
   };
@@ -64,23 +64,23 @@ function CardCarousel({ slides }: { slides: Slide[] }) {
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
     >
-      {/* Slide */}
+      
       <img
         src={slides[current].image}
         alt={slides[current].title}
         className="w-full h-64 object-cover object-top transition-all duration-500"
       />
 
-      {/* Custom gradient overlay */}
+      
       <div className="absolute inset-0 bg-[linear-gradient(183.45deg,rgba(0,0,0,0.05)_41.18%,rgba(0,0,0,0.6)_100.3%)] z-10" />
 
-      {/* Text (above overlay) */}
+      
       <div className="absolute bottom-0 left-0 right-0 p-4 text-white z-20">
         <p className="text-xs uppercase">{slides[current].label}</p>
         <h3 className="font-bold">{slides[current].title}</h3>
       </div>
 
-      {/* Dots navigation */}
+      
       <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex space-x-2 z-20">
         {slides.map((_, i) => (
           <button

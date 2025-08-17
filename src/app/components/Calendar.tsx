@@ -13,7 +13,7 @@ const Calendar: React.FC<CalendarProps> = ({
   selectedDate = new Date(), 
   onDateSelect 
 }) => {
-  const [currentDate, setCurrentDate] = useState(new Date(2023, 10, 1)); // Start with Nov 2023
+  const [currentDate, setCurrentDate] = useState(new Date(2023, 10, 1)); // 
   
   const monthNames = [
     'January', 'February', 'March', 'April', 'May', 'June',
@@ -72,7 +72,7 @@ const Calendar: React.FC<CalendarProps> = ({
   
   return (
     <div className="text-white w-full mx-auto">
-      {/* Header */}
+      
       <div className="flex items-center justify-center gap-4 p-2">
         <button 
           onClick={() => navigateMonth('prev')}
@@ -93,7 +93,7 @@ const Calendar: React.FC<CalendarProps> = ({
         </button>
       </div>
 
-      {/* Day labels */}
+      
       <div className="grid grid-cols-7 text-center text-gray-500 text-[9px] font-medium">
         {dayNames.map(day => (
           <div key={day} className='border border-[#242424] border-[0.235px]'>
@@ -102,7 +102,7 @@ const Calendar: React.FC<CalendarProps> = ({
         ))}
       </div>
 
-      {/* Calendar grid */}
+      
       <div className="grid grid-cols-7">
         {days.map((date, index) => (
           <div key={index} className="flex items-start p-[5.68px] border-[0.235px] border-[#242424] h-[91px]">
@@ -136,8 +136,8 @@ const Calendar: React.FC<CalendarProps> = ({
   );
 };
 
-// Popup Wrapper Component (Exported)
-// ==================================
+
+
 interface CalendarPopupProps {
   onClose: () => void;
 }
