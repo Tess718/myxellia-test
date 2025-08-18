@@ -7,14 +7,14 @@ body{
   @apply bg-gray-100 rounded-[8px];
 }
 .navlink-container {
-  @apply flex md:px-20 px-4 border-b border-gray-300 py-4 justify-between items-center max-sm:items-start flex-col md:flex-row max-sm:absolute max-sm:bg-white max-sm:h-dvh max-sm:justify-start z-10 max-sm:mt-4 max-sm:gap-4;
+  @apply flex md:px-20 px-4 border-b border-gray-300 py-4 justify-between items-center max-sm:items-start flex-col md:flex-row max-sm:absolute max-sm:bg-white max-sm:h-dvh max-sm:justify-start z-10 max-sm:mt-4 max-sm:gap-4 ;
 }
 .text-main-black {
   @apply text-[#191919]
 }
 
 .search {
-  @apply bg-gray-100 rounded-[8px] px-4 py-2 border border-[#E4E4E4] flex items-center gap-2 lg:w-[319px];
+  @apply bg-gray-100 rounded-[8px] px-4 py-2 border border-[#E4E4E4] flex items-center gap-2 lg:w-[319px] w-[200px];
 }
 
 .text-mid-gray {
