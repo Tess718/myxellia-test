@@ -9,7 +9,7 @@ interface OverviewCardProps {
   title: string
   icon: string
   stats: Stat[]
-  viewAllText?: string
+  viewAllText: string
 }
 
 const OverviewCard: React.FC<OverviewCardProps> = ({ title, icon, stats }) => {
