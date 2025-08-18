@@ -37,7 +37,7 @@ export const overviewCards = [
   {
     title: "Listings Overview",
     icon: "/solar_home-linear.png",
-    link: "View all",
+    viewAllText: "View all",
     stats: [
       { label: "Total", value: "1.8k" },
       { label: "Active", value: "80" },
@@ -47,7 +47,7 @@ export const overviewCards = [
   {
     title: "Users Overview",
     icon: "/profile 2.png",
-    link: "View all",
+    viewAllText: "View all",
     stats: [
       { label: "Total", value: "20.7k" },
       { label: "Riders", value: "8.5k" },
