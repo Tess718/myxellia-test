@@ -69,7 +69,7 @@ const Page = () => {
 
       </div>
 
-      <div className='relative'>
+      <div className='relative pb-15'>
         <RowOfCarousels/>
       <img src="/Footer.png" className='absolute z-10 top-15 right-0 cursor-pointer' alt="" />
       </div>

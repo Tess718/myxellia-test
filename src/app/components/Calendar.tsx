@@ -146,7 +146,7 @@ const CalendarPopup = forwardRef<HTMLDivElement, CalendarPopupProps>(({ onClose 
   const [selectedDate, setSelectedDate] = useState<Date>(new Date(2023, 10, 16));
   
   return (
-    <div ref={ref} className="absolute z-30 top-[80px] right-0 w-[400px] bg-[#171717]  shadow-lg flex flex-col">
+    <div ref={ref} className="fixed z-25 max-sm:top-1/2 max-sm:left-1/2 max-sm:-translate-x-1/2 max-sm:-translate-y-1/2 top-[80px] right-0 w-[400px] bg-[#171717] shadow-lg flex flex-col">
         <div className="flex justify-between items-center p-4 border-b border-[#242424]">
             <div className="flex items-center gap-2">
                 <button onClick={onClose} className="p-1 rounded-full hover:bg-gray-700">

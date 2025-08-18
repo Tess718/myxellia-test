@@ -47,22 +47,22 @@ const Navbar = () => {
 
   return (
     <div className='bg-white'>
-        <div className='bg-[#191919] py-6 md:px-20 px-4 flex justify-between md:items-center items-end'>
-            <img src="/Myxellia logo.png" alt="logo" className='max-sm:w-26' />
+        <div className='bg-[#191919] py-6 md:px-20 px-4 flex justify-between items-center'>
+            <img src="/Myxellia logo.png" alt="logo" className='' />
 
-            <div className='flex items-center md:gap-6 gap-3 max-sm:justify-center max-sm:pt-3'>
-                <img src="/Notification 1.png" alt="Notifications" className='opacity-50 max-sm:w-5' />
+            <div className='flex items-center md:gap-6 gap-3 max-sm:justify-between max-sm:px-4 max-sm:py-3 max-sm:fixed max-sm:w-full max-sm:bottom-0 max-sm:bg-black max-sm:right-0 max-sm:z-30'>
+                <img src="/Notification 1.png" alt="Notifications" className='opacity-50 w-8' />
 
-                <img src="/calculator.png" alt="Calculator" onClick={openBudget} className='cursor-pointer max-sm:w-5' />
+                <img src="/calculator.png" alt="Calculator" onClick={openBudget} className='cursor-pointer w-8' />
 
-                <img src="/calendar.png" alt="Calendar icon" className='cursor-pointer max-sm:w-5' onClick={toggleCalendar} ref={calendarToggleRef} />
+                <img src="/calendar.png" alt="Calendar icon" className='cursor-pointer w-8' onClick={toggleCalendar} ref={calendarToggleRef} />
 
-                <img src="/message-notif.png" alt="Messages" className='opacity-50 max-sm:w-5' />
+                <img src="/message-notif.png" alt="Messages" className='opacity-50 w-8' />
 
-                <img src="/Profile.png" alt="User profile" className='max-sm:w-5' />
+                <img src="/Profile.png" alt="User profile" className='w-8' />
 
-                <img src="/menu.png" alt="" className='w-10 md:hidden cursor-pointer max-sm:w-5' onClick={() => setOpen(!open)} />
             </div>
+                <img src="/menu.png" alt="menu" className='w-20 md:hidden cursor-pointer max-sm:w-5' onClick={() => setOpen(!open)} />
         </div>
 
         {open && (
@@ -111,7 +111,7 @@ const Navbar = () => {
         {isBudgetOpen && (
         <>
           <div
-            className="fixed inset-0 bg-[rgba(0,0,0,0.5)] z-20"
+            className="fixed inset-0 bg-[rgba(0,0,0,0.5)] z-30"
             onClick={closeBudget}
             aria-hidden="true"
           />
