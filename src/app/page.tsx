@@ -1,11 +1,12 @@
 'use client';
 
-import React, { useState } from 'react'
 import GroupedBarChart from './components/GroupedBarChart'
 import RowOfCarousels from './components/RowOfCarousels'
 import OverviewCard from './components/OverviewCard';
 import { overviewCards } from './constants';
 import MetricsGrid from './components/MetricsGrid';
+import { metrics } from './constants';
+
 
 const Page = () => {
 
@@ -46,7 +47,7 @@ const Page = () => {
               <img src="/Ellipse 12.png" alt="" className='absolute -left-3 top-1/2 -translate-y-1/2' />
             </div>
             <div className="basis-[55%]">
-             <MetricsGrid />
+              <MetricsGrid metrics={metrics} />
             </div>
           </div>
           <div>
@@ -56,22 +57,22 @@ const Page = () => {
 
         <div className="basis-[30%] flex lg:flex-col md:flex-row flex-col gap-4">
           {overviewCards.map((item) => (
-        <OverviewCard
-          key={item.title}
-          title={item.title}
-          icon={item.icon}
-          viewAllText={item.viewAllText}
-          stats={item.stats}
-        />
+          <OverviewCard
+            key={item.title}
+            title={item.title}
+            icon={item.icon}
+            viewAllText={item.viewAllText}
+            stats={item.stats}
+          />
       ))}
 
         </div>
 
       </div>
 
-      <div className='relative pb-15'>
+      <div className='relative max-sm:pb-15'>
         <RowOfCarousels/>
-      <img src="/Footer.png" className='absolute z-10 top-15 right-0 cursor-pointer' alt="" />
+      <img src="/Footer.png" className='fixed z-20 bottom-25 right-5 lg:right-20 lg:bottom-10 md:right-5 md:bottom-20 cursor-pointer' alt="chat" />
       </div>
       
 

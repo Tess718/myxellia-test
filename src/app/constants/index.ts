@@ -55,3 +55,25 @@ export const overviewCards = [
     ],
   },
 ]
+
+export type Slide = {
+  image: string
+  label: string
+  title: string
+}
+
+export const carouselData: Slide[][] = [
+  [
+    { image: '/carol-1.jpg', label: 'MOST CLICKED', title: 'Urban Prime Plaza Premiere' },
+    { image: 'https://img.freepik.com/free-photo/observation-urban-building-business-steel_1127-2397.jpg?w=360', label: 'MOST CLICKED', title: 'Urban Prime Plaza Premiere' },
+    { image: 'https://t4.ftcdn.net/jpg/02/81/89/73/360_F_281897358_3rj9ZBSZHo5s0L1ug7uuIHadSxh9Cc75.jpg', label: 'MOST CLICKED', title: 'Urban Prime Plaza Premiere' },
+  ],
+  [
+    { image: '/carol-2.jpg', label: 'MOST WATCHLISTED', title: 'Urban Prime Plaza Premiere' },
+    { image: 'https://media.istockphoto.com/id/1508453163/photo/two-modern-buildings-with-glass-windows-architecture-design-of-buildings-office-space-houses.jpg?s=612x612&w=0&k=20&c=RSJYaxThii5iK-zk_69h16UVthwufA1gbaxoZEKOUZg=', label: 'MOST WATCHLISTED', title: 'Urban Prime Plaza Premiere' },
+  ],
+  [
+    { image: '/carol-3.jpg', label: 'HOTTEST LISTING', title: 'Urban Prime Plaza Premiere' },
+    { image: 'https://thumbs.dreamstime.com/b/downtown-office-buildings-buildings-halifax-nova-scotia-canada-188558695.jpg', label: 'HOTTEST LISTING', title: 'Urban Prime Plaza Premiere' },
+  ],
+]
